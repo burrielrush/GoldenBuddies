@@ -1,0 +1,23 @@
+{
+  "name": "golden-buddies",
+  "version": "1.0.0",
+  "description": "This is a repo for group project #3. We are starting a social media app for Golden Retrievers.. Dogs are the humans best friend and retrievers are at the top of the line when it comes to loyalty, care and human connection. We want to share our everyday lives in the eyes of our pet and interact with all of our fellow Golden Retriever buddies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burrielrush/GoldenBuddies.git"
+  },
+  "author": "Rush, Jayce and Anie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/burrielrush/GoldenBuddies/issues"
+  },
+  "homepage": "https://github.com/burrielrush/GoldenBuddies#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0"
+  }
+}
