@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const Login = () => {
+const Signup = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -8,11 +8,12 @@ const Login = () => {
         e.preventDefault()
 
             console.log(email, password)
+        
     }
 
     return (
-        <form className="login" onsubmit={handleSubmit}> 
-            <h3> login</h3>
+        <form className="sighup" onsubmit={handleSubmit}> 
+            <h3> Sigh up</h3>
 
             <label>Email:</label>
             <input 
@@ -24,8 +25,8 @@ const Login = () => {
             type="password" onChange={(e) => setPassword(e.target.value)}
             value={password}/>
 
-            <button>login</button>
+            <button>Sigh up</button>
   </form>  
   )
 }
-export default Login
+export default Signup
