@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
       <Navbar />
     <div className="pages">
       <Routes>
@@ -23,7 +24,7 @@ function App() {
         />
       </Routes>
     </div>
-      </BrowserRouter>
+      </Router>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
