@@ -5,6 +5,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Navbar from './components/Navbar';
 import Profile from './pages/Profile';
+
+
 function App() {
   return (
     <div className="App"><Router>
