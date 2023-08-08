@@ -4,20 +4,22 @@ import '../styles/Profile.css';
 
 const Profile = () => {
   const user = {
-    name: 'John Doe',
-    username: 'johndoe',
-    bio: 'Dog lover and adventurer.',
+    image: '',
+    name: 'Bark Twain',
+    username: 'goodestboy',
+    bio: 'Human lover and adventurer.',
     followers: 500,
     following: 300,
     posts: [
-      { id: 1, content: 'My dog enjoying the beach!', image: 'https://example.com/image1.jpg' },
-      { id: 2, content: 'Morning walk with my furry friend.', image: 'https://example.com/image2.jpg' },
+      { id: 1, content: 'Enjoying the beach!', image: 'images/Walker Pawnson.jpeg' },
+      { id: 2, content: 'Morning walk.', image: 'images/Bob Ruff.jpeg' },
       // Add more posts as needed
     ],
   };
 
   return (
     <div>
+      <h1>{user.image}</h1>
       <h2>{user.name}</h2>
       <p>@{user.username}</p>
       <p>{user.bio}</p>
