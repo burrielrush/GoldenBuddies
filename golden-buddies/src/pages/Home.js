@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "../styles/Home.css";
+import "./home.css";
 
 function Home() {
     const [posts, setPosts] = useState([]);

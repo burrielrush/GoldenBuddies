@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useLogout } from '../hooks/useLogout'
 import React from 'react';
-
+import './navbar.css';
 
 const Navbar = () => {
     const { logout } = useLogout
@@ -13,9 +13,9 @@ const Navbar = () => {
     return (
         <header>
             <div className='container'>
-                <Link to="/">
+            
                     <h1>Golden Buddies</h1>
-                </Link>
+
                 <nav>
                     <div className="navbar">
                         <Link to="/">Home</Link>

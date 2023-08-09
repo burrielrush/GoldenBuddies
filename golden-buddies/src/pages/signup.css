@@ -1,0 +1,54 @@
+/* styles/Signup.css */
+
+.signup {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #38b6ff;
+    border-radius: 5px;
+    background-color: #38b6ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .signup label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .signup input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+  }
+  
+  .signup button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0095f6; /* Instagram-like blue color */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup button:disabled {
+    background-color: #b5d8f9;
+    cursor: not-allowed;
+  }
+  
+  .signup .error {
+    color: #ed4956; /* Instagram-like error color */
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+  
