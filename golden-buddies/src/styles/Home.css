@@ -7,9 +7,14 @@ body, html {
   }
   /* Header styles */
   .home {
-    text-align: center;
-    padding: 2rem;
-  }
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Adding a border to the h1 element */
+    border: 1px solid #333; /* You can adjust the color and width as needed */
+    padding: 0.5rem; /* Add padding to create space between the text and the border */
+}
+  
   /* Main content styles */
   .post-feed {
     display: flex;
