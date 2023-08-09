@@ -22,7 +22,7 @@ const Navbar = () => {
                         <Link to="/profile">Profile</Link>
                         <Link to="/login">Login</Link>
                         <Link to="/signup">Signup</Link>
-                        <button onClick={handleClick}>log out</button>
+                        <button onClick={handleClick}>Log out</button>
                     </div>
                 </nav>
             </div>
