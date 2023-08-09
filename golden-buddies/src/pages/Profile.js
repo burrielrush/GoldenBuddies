@@ -11,8 +11,8 @@ const Profile = () => {
     followers: 500,
     following: 300,
     posts: [
-      { id: 1, content: 'Enjoying the beach!', image: 'images/Walker Pawnson.jpeg' },
-      { id: 2, content: 'Morning walk.', image: 'images/Bob Ruff.jpeg' },
+      { id: 1, content: 'Enjoying the beach!', image: './images/Bark Twain.jpegeg' },
+      { id: 2, content: 'Morning walk.', image: './images/Bob Ruff.jpeg' },
       // Add more posts as needed
     ],
   };

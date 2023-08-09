@@ -1,0 +1,66 @@
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .profile h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .profile h2 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  .profile p {
+    font-size: 1rem;
+    color: #333333;
+    margin: 0.25rem 0;
+  }
+  .profile p.username {
+    font-weight: bold;
+  }
+  .profile p.bio {
+    margin-top: 1rem;
+    color: #666666;
+  }
+  .profile p.stats {
+    color: #666666;
+    margin-top: 0.25rem;
+  }
+  .profile .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .profile .user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 1px solid #DBDBDB;
+  }
+  .profile .posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .profile .post {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .profile .post img {
+    max-width: 100%;
+    height: auto;
+  }
+  .profile .post-content {
+    padding: 0.5rem;
+  }
+  .profile .post-content p {
+    font-size: 0.875rem;
+    color: #333333;
+    margin: 0.25rem 0;
+  }
