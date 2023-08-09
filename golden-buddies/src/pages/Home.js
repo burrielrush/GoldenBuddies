@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/Home.css";
+import { useAuthContext } from '../hooks/useAuthContext';
 
 function Home() {
     const [posts, setPosts] = useState([]);
+    const {user} = useAuthContext()
 
     // Function to fetch friends' posts from the server (replace with your actual API call)
     const getFriendsPosts = async () => {
         try {
-            const response = await fetch('/api/friends-posts');
+            const response = await fetch('/api/friends-posts', {
+                headers: {
+                    'Authorization': `Bearer ${user.token}`
+                }
+            });
             const data = await response.json();
             setPosts(data);
         } catch (error) {
@@ -18,7 +24,12 @@ function Home() {
     useEffect(() => {
         // Fetch friends' posts when the component mounts
         getFriendsPosts();
-    }, []);
+
+
+        if (user) {
+            getFriendsPosts()
+        }
+    }, [user]);
 
     return (
         <div className="home">
