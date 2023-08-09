@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useAuthContext } from './useAuthContext'
+import { useMutation } from  "@apollo/client";
+import { ADD_USER } from "../utils/mutations";
+
 
 export const useSignup = () => {
     const [error, setError] = useState(null)
@@ -31,3 +34,4 @@ export const useSignup = () => {
     }
     return { signup, isLoading, error }
 }
+

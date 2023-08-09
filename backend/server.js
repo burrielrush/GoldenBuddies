@@ -26,10 +26,16 @@ const server = new ApolloServer({
   resolvers,
 });
 
+console.log("apollo server started");
+
+
 // Apply Apollo Server as middleware to Express
 async function startApolloServer() {
   await server.start();
   server.applyMiddleware({ app });
+  db.once('open', () => {
+    app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
+  });
 }
 
 startApolloServer();
@@ -44,6 +50,4 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(routes);
 
-db.once('open', () => {
-  app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
-});
+

@@ -4,7 +4,7 @@ import React from 'react';
 
 
 const Navbar = () => {
-    const { logout } = useLogout
+    const { logout } = useLogout();
 
     const handleClick = () => {
     logout()
