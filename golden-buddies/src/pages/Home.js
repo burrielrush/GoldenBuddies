@@ -7,7 +7,7 @@ function Home() {
     // Function to fetch friends' posts from the server (replace with your actual API call)
     const getFriendsPosts = async () => {
         try {
-            const response = await fetch('/api/friends-posts');
+            const response = await fetch('');
             const data = await response.json();
             setPosts(data);
         } catch (error) {

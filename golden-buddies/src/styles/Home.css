@@ -17,6 +17,8 @@ body, html {
   
   /* Main content styles */
   .post-feed {
+    border: 1px solid #38B6FF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
