@@ -1,18 +1,19 @@
 import React from 'react';
 import '../styles/Profile.css';
-
+import '../images/Golden.jpg';
+import '../images/BobRuff.jpeg';
 
 const Profile = () => {
   const user = {
-    image: '../images/BarkTwain.jpeg',
+    image: '../images/Golden.jpg',
     name: 'Bark Twain',
     username: 'goodestboy',
     bio: 'Human lover and adventurer.',
     followers: 500,
     following: 300,
     posts: [
-      { id: 1, content: 'Enjoying the beach!', image: './images/Bark Twain.jpeg' },
-      { id: 2, content: 'Morning walk.', image: './images/Bob Ruff.jpeg' },
+      { id: 1, content: 'Enjoying the beach!', image: '../images/Golden.jpg' },
+      { id: 2, content: 'Morning walk.', image: '../images/BobRuff.jpeg' },
       // Add more posts as needed
     ],
   };

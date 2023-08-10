@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/Home.css";
+import SinglePost from '../components/singlepost';
 
 function Home() {
     const [posts, setPosts] = useState([]);
@@ -28,15 +29,11 @@ function Home() {
             {/* Render the feed of friends' posts */}
             <div className="post-feed">
                 {posts.map((post) => (
-                    <div key={post.id} className="post">
-                        <h2>{post.title}</h2>
-                        <p>{post.content}</p>
-                        <p>Posted by: {post.author}</p>
-                    </div>
+                    <SinglePost key={post.id} post={post} />
                 ))}
             </div>
         </div>
     );
-};
+}
 
 export default Home;
