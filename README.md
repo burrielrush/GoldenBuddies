@@ -48,8 +48,10 @@ To set up the project locally:
 
 <img width="1097" alt="Screenshot 2023-08-10 at 7 44 56 AM" src="https://github.com/burrielrush/GoldenBuddies/assets/123046249/4489f725-2a84-45e0-9e53-86859ab0f538">
 
+![Screenshot 2023-08-10 at 6 19 51 PM](https://github.com/burrielrush/GoldenBuddies/assets/123046249/67c6344b-51cc-44f7-8aa3-05f1d4bb7844)
 
-<img width="1099" alt="Screenshot 2023-08-10 at 7 44 45 AM" src="https://github.com/burrielrush/GoldenBuddies/assets/123046249/556e9b7e-7120-47ef-b066-d9d11d9d732b">
+
+
 
 
 ## Payment Platform Integration
