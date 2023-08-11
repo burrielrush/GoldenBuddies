@@ -13,7 +13,9 @@ body, html {
     /* Adding a border to the h1 element */
     border: 1px solid #333; /* You can adjust the color and width as needed */
     padding: 0.5rem; /* Add padding to create space between the text and the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
   
   /* Main content styles */
   .post-feed {

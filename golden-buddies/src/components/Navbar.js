@@ -1,26 +1,29 @@
 import { Link } from 'react-router-dom';
 import { useLogout } from '../hooks/useLogout';
-import React, { useState } from 'react'; // Import useState
+import React, { useState } from 'react';
 import "../styles/Navbar.css";
-import LoginForm from './LoginForm'; // Import the LoginForm component
+import LoginForm from './LoginForm';
+import GoldenBuddies from '../images/Golden.jpg';
 
 const Navbar = () => {
     const { logout } = useLogout();
-    const [loginFormVisible, setLoginFormVisible] = useState(false); // State for login form visibility
+    const [loginFormVisible, setLoginFormVisible] = useState(false);
 
     const handleClick = () => {
         logout();
     };
 
     const handleLoginClick = () => {
-        setLoginFormVisible(!loginFormVisible); // Toggle login form visibility
+        setLoginFormVisible(!loginFormVisible);
     };
 
     return (
         <header>
             <div className='container'>
                 <Link to="/">
-                    <h1>Golden Buddies</h1>
+                    <div className="logo">
+                        <img src={GoldenBuddies} alt="Golden Buddies" className="logo-picture"/>
+                    </div>
                 </Link>
                 <nav>
                     <div className="navbar">
@@ -32,7 +35,6 @@ const Navbar = () => {
                     </div>
                 </nav>
             </div>
-            {/* Render the LoginForm component conditionally */}
             {loginFormVisible && <LoginForm />}
         </header>
     );

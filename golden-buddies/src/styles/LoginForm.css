@@ -1,0 +1,52 @@
+/* LoginForm.css (or include this directly in your component) */
+
+/* Style for the container */
+.login-form-container {
+  max-width: 00px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form elements */
+.login-form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.login-form-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for error message */
+.login-form-error {
+  color: #d9534f;
+  margin-top: 5px;
+}
+
+/* Style for submit button */
+.login-form-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.login-form-button:hover {
+  background-color: #2980b9;
+}

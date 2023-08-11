@@ -28,6 +28,7 @@ function Home() {
 
             {/* Render the feed of friends' posts */}
             <div className="post-feed">
+                <h2></h2>
                 {posts.map((post) => (
                     <SinglePost key={post.id} post={post} />
                 ))}

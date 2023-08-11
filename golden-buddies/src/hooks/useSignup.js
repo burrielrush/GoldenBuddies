@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuthContext } from './useAuthContext'
-import { useMutation } from  "@apollo/client";
-import { ADD_USER } from "../utils/mutations";
+//import { useMutation } from  "@apollo/client";
+//import { ADD_USER } from "../utils/mutations";
 
 
 export const useSignup = () => {
@@ -13,7 +13,7 @@ export const useSignup = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('', {
+        const response = await fetch('http://localhost:3001/api/user-routes/signup', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})

@@ -5,9 +5,19 @@
     padding: 2rem;
     border: 1px solid #38B6FF;
     border-radius: 5px;
-    background-color: #42b7fa;
+    background-color: rgba(255, 255, 255, 0.5); 
+    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  .profile-image {
+    width: 400px;
+    height: 500px;
+    border-radius: 300px;
+  }
+.post-image {
+  width: 400px;
+}
+
   .profile h2 {
     font-size: 1.25rem;
     margin: 0;
